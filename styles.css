@@ -1,23 +1,17 @@
+
+
 body > table{
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
     width: 100%;
     background-color: aliceblue;
     height:1000px;
-    animation-name: ex;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    color:black;
 }
-@keyframes ex {
-    0%   {background-color: aliceblue;}
-    25%  {background-color: aquamarine;}
-    50%  {background-color: yellowgreen;}
-    100% {background-color: beige;}
-  }
 table{
     border-collapse: collapse;
+    border:10px groove red;
+    box-shadow: 12px 12px 10px black;
+    
 }
 table.list{
     width:100%;
@@ -28,12 +22,23 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-tr:nth-child(even),table.list thead>tr {
-    background-color: red;
+td
+{
+    font-size:35px;
+    font-family:algerian;
+    color:black;
 }
-
+tr:nth-child(even),table.list thead>tr {
+    background-color: blanchedalmond;
+}
+tr:nth-child(odd)
+{
+    background-color:beige;
+}
 input[type=text], input[type=number] {
     width: 100%;
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -42,6 +47,10 @@ input[type=text], input[type=number] {
     box-sizing: border-box;
     background-color: azure;
     
+}
+input[type=text]:hover
+{
+    background-color: coral;
 }
 
 input[type=submit]{
@@ -54,21 +63,32 @@ input[type=submit]{
     border-radius: 4px;
     cursor: pointer;
     background-color: azure;
+    font-size:30px;
+}
+input[type=submit]:hover
+{
+    background-color: coral;
 }
 
 form div.form-action-buttons{
     text-align: right;
 }
+form{
+    font-size:30px;
+}
 
 a{
     cursor: pointer;
     text-decoration: underline;
-    color: #0000ee;
+    color: black;
+    background-color:bisque;
+    padding:5px;
+    font-size:35px;
     margin-right: 4px;
 }
 a:hover
 {
-    color:yellowgreen;
+    color:red;
 }
 
 label.validation-error{
